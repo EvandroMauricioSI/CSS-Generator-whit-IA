@@ -1,0 +1,128 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  color: #e4e4e7;
+  background-color: #09090b;
+  padding: 60px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 40px;
+  color: #fafafa;
+  font-weight: bold;
+}
+span {
+  color: #62c55e;
+}
+
+p {
+  color: #71717a;
+}
+
+textarea {
+  resize: none; /* impede redimensionamento */
+  outline: none; /* remove borda azul padrão */
+  width: 500px;
+  max-width: 90%;
+  height: 100px;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+
+  color: gray;
+  background-color: #1a1a1a;
+
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+/* quando clicar no textarea */
+textarea:focus {
+  border: 2px solid forestgreen;
+}
+
+button {
+  border-radius: 10px;
+  width: 500px;
+  max-width: 90%;
+  margin-top: 10px;
+  background-color: #62c55e;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+
+  transition: all 0.1s ease;
+}
+button:hover {
+  background-color: green;
+}
+
+/* efeito de botão pressionado */
+button:active {
+  transform: translateY(2px);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.bloco-codigo {
+  margin-top: 20px;
+  background-color: #1a1a1a;
+  color: #62c55e;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre-wrap; /* mantém quebras de linha */
+}
+
+.resultado-codigo {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  border: 1px solid #27272a;
+  border-radius: 12px;
+  background: #1a1a1a;
+}
+
+.area-resultado {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  align-items: stretch;
+}
+
+.coluna {
+  flex: 1;
+  text-align: left;
+}
+
+.bloco-codigo {
+  height: 100%;
+  min-height: 350px;
+}
+
+.cabecalho-codigo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.botao-copiar {
+  width: auto;
+  padding: 6px 14px;
+  font-size: 14px;
+  background: #27272a;
+  border: 1px solid #3f3f46;
+}
+
+.botao-copiar:hover {
+  background: #3f3f46;
+}

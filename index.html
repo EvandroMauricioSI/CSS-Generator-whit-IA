@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>EM CSS Generator - Basic</title>
+  </head>
+
+  <body>
+    <h1>EM CSS Generator - <span>Basic</span> ⚡️</h1>
+    <p>Descreva o que você imagina e veja a mágica acontecer</p>
+
+    <textarea
+      rows="3"
+      class="caixa-texto"
+      placeholder="Ex: Um botão azul neon com bordas arredondadas e efeito hover..."
+    ></textarea
+    ><br />
+
+    <button class="botao-gerar">Gerar CSS ⚡️</button>
+
+    <div class="area-resultado">
+      <div class="coluna">
+        <div class="cabecalho-codigo">
+          <h2>Código</h2>
+          <button class="botao-copiar">Copiar</button>
+        </div>
+
+        <p class="bloco-codigo"></p>
+      </div>
+
+      <div class="coluna">
+        <h2>Preview</h2>
+        <iframe class="resultado-codigo"></iframe>
+      </div>
+    </div>
+  </body>
+  <script src="scripts.js"></script>
+</html>
