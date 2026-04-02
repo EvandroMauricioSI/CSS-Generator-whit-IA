@@ -15,7 +15,7 @@ async function gerarCodigo() {
     headers: {
       "Content-Type": "application/json",
       Authorization:
-        "Bearer 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",
+        "com.groq.api_key: sk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     },
     body: JSON.stringify({
       model: "llama-3.3-70b-versatile",
